@@ -1,3 +1,145 @@
+html,
 body {
-    background: red;
+    height: 100%;
 }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/dist/Roboto-Regular.ttf);
+}
+
+body {
+    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.container .logo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container .login-form {
+    padding: 0;
+}
+
+.margin-left {
+    margin-left: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.login-form h3 {
+    margin-bottom: 20px;
+}
+
+.login-form .form-control {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: none;
+}
+
+.btn {
+    padding: 5px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.btn-disabled, .btn-disabled:hover {
+    border-color: #9a9a9c;
+    border-width: 2px;
+    background: none;
+    color: #9a9a9c;
+}
+
+.btn-enabled, .btn-enabled:hover {
+    background: #5ab98c;
+    color: #fff;
+}
+
+.btn-error, .btn-error:hover {
+    background: #d2877d;
+    color: #fff;
+}
+
+.login-form .btn {
+    margin-right: 20px;
+}
+
+.wrap-input {
+    height: 75px;
+    padding-left: 20px;
+}
+
+.wrap-input-underline {
+    border-bottom: 2px solid #9a9a9c;
+}
+
+.input-group-addon{
+    color: #9a9a9c;
+}
+
+.form-control .info {
+    padding-left: 5px;
+    color: #9a9a9c;
+}
+
+.container .input-group-prepend {
+    margin-right: 10px;
+}
+
+.container .input-group-append {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.footer {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-control {
+    /*background: red;*/
+    height: 60px;
+    padding: 0 10px;
+}
+
+.footer-control .input-group-addon {
+    color: #727274;
+}
+
+.footer-control .info {
+    color: #727274;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.icon-size2{
+    font-size:20px;
+}
+
