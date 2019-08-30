@@ -89,8 +89,17 @@ body {
     padding-left: 20px;
 }
 
-.wrap-input-underline {
-    border-bottom: 2px solid #9a9a9c;
+.validate-line {
+    height: 2px;
+    background: #9a9a9c;
+}
+
+.validate-line-ok {
+    background: #5ab98c;
+}
+
+.validate-line-error {
+    background: #9a9a9c;
 }
 
 .input-group-addon{
