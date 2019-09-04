@@ -19,48 +19,92 @@ body {
     color: #000;
 }
 
-.container .logo {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.container .login-form {
+.container {
     padding: 0;
 }
 
-.margin-left {
-    margin-left: 20px;
-}
-
-.logo {
+.login-logo {
     width: 90px;
     height: 90px;
+    margin: 80px auto;
     overflow: hidden;
-    margin: 0 auto;
 }
 
-.logo img {
+.login-logo img {
     width: 100%;
     height: 100%;
     object-fit: contain
+}
+
+.login-title {
+    margin-left: 20px;
+}
+
+.login-form {
+    margin: auto;
+    padding: 0;
 }
 
 .login-form h3 {
     margin-bottom: 20px;
 }
 
-.login-form .form-control {
+.input-email,
+.input-password,
+.forgot-password{
+    width: 100%;
     padding: 0;
     border: 0;
+    margin: auto;
+}
+
+.input-email,
+.input-password {
     box-shadow: none;
     -webkit-box-shadow: none;
     outline: none;
+    color: black;
+}
+
+.input-group-prepend {
+    margin-right: 10px;
+}
+
+.input-group-append {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.login-form-email,
+.login-form-password,
+.login-form-confirm{
+    display: flex;
+    height: 60px;
+    padding-left: 20px;
+    color: #9a9a9c;
+}
+
+.forgot-password {
+    width: 100%;
+
+}
+
+.forgot-password .info,
+.forgot-password i {
+    cursor: pointer;
 }
 
 .btn {
+    margin: auto;
+    height: 40px;
     padding: 5px 22px;
     border-radius: 50px;
     font-weight: bold;
+    white-space: nowrap;
+}
+
+.login-form .btn {
+    margin-right: 20px;
 }
 
 .btn-disabled, .btn-disabled:hover {
@@ -80,15 +124,6 @@ body {
     color: #fff;
 }
 
-.login-form .btn {
-    margin-right: 20px;
-}
-
-.wrap-input {
-    height: 75px;
-    padding-left: 20px;
-}
-
 .validate-line {
     height: 2px;
     background: #9a9a9c;
@@ -102,24 +137,6 @@ body {
     background: #9a9a9c;
 }
 
-.input-group-addon{
-    color: #9a9a9c;
-}
-
-.form-control .info {
-    padding-left: 5px;
-    color: #9a9a9c;
-}
-
-.container .input-group-prepend {
-    margin-right: 10px;
-}
-
-.container .input-group-append {
-    margin-left: 10px;
-    margin-right: 20px;
-}
-
 .footer {
     background: #f5f5f5;
     margin: 0;
@@ -131,21 +148,21 @@ body {
     right: 0;
 }
 
-.footer-control {
-    /*background: red;*/
-    height: 60px;
-    padding: 0 10px;
-}
-
-.footer-control .input-group-addon {
+.toolbar {
+    display: flex;
+    padding: 10px 20px;
+    height: 50px;
+    display: flex;
+    margin: auto;
     color: #727274;
 }
 
-.footer-control .info {
-    color: #727274;
-    margin-right: 5px;
-    font-weight: bold;
-    font-size: 0.8em;
+.map {
+    width: 100%;
+}
+
+.new-user {
+    white-space: nowrap;
 }
 
 .icon-size2{
