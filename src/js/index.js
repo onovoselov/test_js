@@ -103,9 +103,11 @@ function LoginForm(service) {
         if(this.showPassword) {
             iconCheckPassword.addClass('icon-enabled');
             inputPassword.attr("type", "text");
+            changeClass(iconPassword.children('i'),['fa-lock'], 'fa-unlock');
         } else {
             iconCheckPassword.removeClass('icon-enabled');
             inputPassword.attr("type", "password");
+            changeClass(iconPassword.children('i'),['fa-unlock'], 'fa-lock');
         }
     };
 
