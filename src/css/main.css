@@ -66,11 +66,25 @@ body {
     color: black;
 }
 
-.input-group-prepend {
+#icon-email,
+#icon-password{
     margin-right: 10px;
 }
 
-.input-group-append {
+.icon-enabled {
+    color: black;
+}
+
+#icon-check-email.icon-error {
+    color: #d2877d;
+}
+
+#icon-check-email {
+    color: #5ab98c;
+}
+
+#icon-check-email,
+#icon-check-password {
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -86,11 +100,11 @@ body {
 
 .forgot-password {
     width: 100%;
-
 }
 
 .forgot-password .info,
-.forgot-password i {
+.forgot-password i,
+#icon-check-password {
     cursor: pointer;
 }
 
@@ -99,7 +113,6 @@ body {
     height: 40px;
     padding: 5px 22px;
     border-radius: 50px;
-    font-weight: bold;
     white-space: nowrap;
 }
 
@@ -130,11 +143,19 @@ body {
 }
 
 .validate-line-ok {
+    height: 2px;
+    width: 40%;
+    background: #5ab98c;
+}
+
+.validate-line-ok2 {
+    height: 2px;
     background: #5ab98c;
 }
 
 .validate-line-error {
-    background: #9a9a9c;
+    height: 2px;
+    background: #d2877d;
 }
 
 .footer {
@@ -168,4 +189,5 @@ body {
 .icon-size2{
     font-size:20px;
 }
+
 

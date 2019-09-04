@@ -1,11 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="shortcut icon" href="/dist/favicon.ico" />
+        <script src="main.js"></script>
         <link rel="stylesheet" href="styles.css">
 
         <title>Login form</title>
@@ -19,35 +20,35 @@
                     <img src="/dist/logo.svg"  alt="Logo"/>
                 </div>
 
-                <h3 class="login-title">Welcome</h3>
+                <h3 id="login-title" class="login-title">Welcome</h3>
 
                 <form id="login-form">
                     <div class="login-form-email">
-                        <div class="input-group-prepend my-auto">
+                        <div id="icon-email" class="my-auto">
                             <i class="fa fa-user"></i>
                         </div>
                         <input type="email" id="inputEmail" class="input-email" placeholder="Email address" required autofocus>
-                        <div class="input-group-append my-auto">
+                        <div id="icon-check-email" class="my-auto">
                             <i class="fa fa-check"></i>
                         </div>
                     </div>
-                    <div class="validate-line validate-line-ok"></div>
+                    <div class="validate-line"><div id="line-email"></div></div>
                     <div class="login-form-password">
-                        <div class="input-group-prepend my-auto">
+                        <div  id="icon-password" class="input-group-prepend my-auto">
                             <i class="fa fa-lock"></i>
                         </div>
-                        <input type="password" id="password" class="input-password" placeholder="Password" required>
-                        <div class="input-group-append my-auto">
-                            <i class="fa fa-check"></i>
+                        <input type="password" id="inputPassword" class="input-password" placeholder="Password" required>
+                        <div id="icon-check-password" class="my-auto">
+                            <i class="fa fa-eye"></i>
                         </div>
                     </div>
-                    <div class="validate-line"></div>
+                    <div class="validate-line"><div id="line-password"></div></div>
                     <div class="login-form-confirm">
                         <div href="#" class="forgot-password">
                             <i class="fa fa-info-circle"></i>
                             <span class="info">Forgot password</span>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-disabled" value="submit">Log in</button>
+                        <button id="login" class="btn btn-disabled">Log in</button>
                     </div>
                 </form>
             </div>
@@ -67,6 +68,6 @@
             </div>
         </footer>
 
-        <script src="main.js"></script>
+<!--        <script src="main.js"></script>-->
     </body>
 </html>
